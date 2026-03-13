@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Universitario</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #18bc9c;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+        }
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        .learning-card {
+            background: var(--bg-color);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+        pre {
+            background: #282c34;
+            color: #abb2bf;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .contenedor-imagen {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #ffffff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .contenedor-imagen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Alvaro Elias Flores Pardo</h1>
+        <p>Estudiante de Ingeniería en Ciencias de la Computación y Tecnologías de la Información</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#acerca">Acerca de mí</a></li>
+            <li><a href="#primer-mes">Mi primer mes</a></li>
+            <li><a href="#aprendizajes">Aprendizajes en Computación</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="acerca">
+            <h2>Acerca de mí</h2>
+
+            <div class="contenedor-imagen" style="margin: 0 auto 20px auto;"> <img src="assets/proyecto 1/yo.jpeg" alt="Alvaro_Flores">
+            </div>
+
+            <p>¡Hola! Recientemente finalicé mi etapa de bachillerato y actualmente estoy iniciando mi camino en Ingeniería en Ciencias de la Computación y Tecnologías de la Información en la Universidad del Valle de Guatemala (UVG). Me considero una persona con intereses analíticos y creativos muy variados.</p>
+        
+             <p>Fuera de las clases, disfruto mucho de desentrañar las mecánicas y estrategias de videojuegos como <em>The Legend of Zelda</em> y <em>Hollow Knight</em>, además de tener un gran interes en <em>VolleyBall</em>, donde siempre intento mejorar y dar lo mejor de mí. Estoy abierto a tomar en cuenta puntos de vista y escoger con pensamiento crítico para tomar una desición. Lo que persigo al estudiar esta carrera es combinar mi gusto por la lógica matemática y la resolución estructurada de problemas para desarrollar soluciones tecnológicas eficientes.</p>
+        </section>
+
+        <section id="primer-mes">
+            <h2>Mi primer mes en la universidad</h2>
+            <p>Adaptarme a la vida universitaria ha sido un reto. Lo que más me ha parecido interesante es la profundidad con la que analizamos los temas, desde programación con python, hasta laboratorios de ciencias de la vida. Del mismo modo, convivir y conocer nuevas personas es fascinante y me ha invitado a seguir adelante con esta nueva etapa.</p>
+            <p><strong>Lo que me ha motivado:</strong> aprender de profesores que tienen una gran habilidad para comunicar conceptos complejos de forma sencilla, algo que siempre he admirado en comunicadores científicos. Ver cómo los fundamentos matemáticos y la lógica pura se empiezan a conectar con la programación es increíble.</p>
+            <p><strong>Dificultades enfrentadas:</strong> principalmente el manejo del tiempo y el salto de exigencia respecto al bachillerato. Equilibrar la carga de clases teóricas, laboratorios y los primeros proyectos de introducción a la ingeniería ha requerido mucha disciplina.</p>
+        </section>
+
+        <section id="aprendizajes">
+            <h2>Mis aprendizajes en Computación</h2>
+            <p>A lo largo de mis cursos de Introducción a la Ingeniería y Programación Básica, he consolidado las siguientes habilidades:</p>
+            <div class="learning-card">
+                <h3>1. Pensamiento Algorítmico y creación de código python</h3>
+                <p>He aprendido a descomponer un problema grande en una serie de pasos finitos y lógicos.</p>
+                <strong>Evidencias:</strong>
+                <pre><code>#Ejercicio 6 - Maratón musical
+n = int(input("Ingrese el número de canciones: "))
+lista = []
+
+for i in range(n):
+    cancion = input("Ingrese el nombre de la canción: ")
+    lista.append(cancion)
+
+for i in range(n):
+    print(f" Escuchando {i+1}: {lista[i]}")
+
+#Ejercicio 7 - Suma de números impares y pares
+n = int(input("Ingrese un número: "))
+while n>0:
+    if n%2==0:
+        par = n=+n
+    else:
+        impar = n=+n
+    n = int(input("Ingrese otro número: "))
+
+
+#Ejercicio 8 - Adivina el número
+numero_secreto = random.randint(1, 50)
+x = False
+print(numero_secreto)
+while x != True:
+    guess = int(input("Adivina el número entre 1 y 50: "))
+    if guess == numero_secreto:
+        print("¡Felicidades! Has adivinado el número.")
+        x = True
+    else:
+        print("!Lastima¡ Vuelve a intentar")
+
+</code></pre>
+            </div>
+            <div class="learning-card">
+                <h3>2. Estructuras de Control (Condicionales y Ciclos) y librería turtle de python</h3>
+                <p>Comprender cómo alterar el flujo de ejecución de un programa mediante ciclos (for/while) y decisiones (if/else) ha sido clave para crear programas que resuelvan problemas repetitivos y reducción de líneas de código, asimismo, su uso en conjunto con la librería turtle de python ayudan a la buena practica de reducir el código utilizando ciclos.</p>
+                <strong>Evidencia:</strong>
+                <pre><code>
+import turtle
+
+t = turtle.Turtle()
+
+turtle.bgcolor("black")
+t.penup()
+t.color("cyan")
+t.speed(0)
+
+for i in range(500):
+    t.forward(i)
+    t.left(91)
+    t.pendown()
+
+    if i % 2 == 0:
+        t.color("magenta")
+    else:
+        t.color("cyan")
+
+turtle.done()
+                </code></pre>
+            <figure style="margin: 0;">
+                <img 
+                    src="assets/proyecto 1/Spiral.gif" 
+                    alt="Demostración de espiral animada" 
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border: 1px solid #ddd;">
+                <figcaption style="font-size: 0.9em; color: #666; margin-top: 10px; font-style: italic;">
+                    Ejecución de la animación en espiral.
+                </figcaption>
+            </figure>
+            </div>
+            <div class="learning-card">
+                <h3>3. Identificación de perfiles y mapas de empatía para Desing Thinking</h3>
+                <p>Se identificaron diferentes perfiles de usuarios y se crearon mapas de empatía para comprender mejor sus necesidades y motivaciones.</p>
+                <strong>Evidencia:</strong>
+                <iframe 
+                    src="assets/proyecto 1/fase_de_empatia_design_thinking.pdf" 
+                    width="100%" 
+                    height="500px" 
+                    style="border: 1px solid #ccc; border-radius: 4px; margin-bottom: 15px;">
+                    Tu navegador no soporta la vista previa de PDFs. 
+                </iframe>
+                <br>
+                <a 
+                    href="assets/proyecto 1/fase_de_empatia_design_thinking.pdf" 
+                    download="Fase_Empatia_Design_Thinking.pdf" 
+                    style="display: inline-block; padding: 10px 20px; background-color: #18bc9c; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.3s;">
+                    Descargar PDF
+                </a>
+            </div>
+            <div class="learning-card">
+                <h3>4. Prototipado utilizando Appinventor</h3>
+                <p>Se creó un prototipo funcional utilizando Appinventor para demostrar la viabilidad de la solución propuesta.</p>
+                <strong>Evidencia:</strong>
+                <br>
+                <video 
+                    controls 
+                    style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border: 1px solid #ddd;">
+                    <source src="assets/proyecto 1/prototipo.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+                <br>
+                <a 
+                    href="assets/proyecto 1/EduOrganizer_TEST_LOAD.aia" 
+                    download="EduOrganizer_TEST_LOAD" 
+                    style="display: inline-block; padding: 10px 20px; background-color: #18bc9c; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.3s;">
+                    Descargar aia de prototipo
+                </a>
+            </div>
+            <div class="learning-card">
+                <h3>Correo electrónico</h3>
+                <p>flo261868@uvg.edu.gt</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
